@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  height: 100vh;
+  z-index: 80;
+  padding-top: 60px;
+}
+
+.active {
+  display: block;
+}
+
+.disable {
+  display: none !important;
+}
+
+.room--computer {
+  background-color: #06d6a0 !important;
+}
+
+.room--nomal {
+  background-color: #fbfbfb !important;
+}
+
+.rooms {
+  width: 100%;
+  height: 100%;
+}
+.rooms__room {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__btn--close {
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 90;
+  background: none;
+  transition: all 0.15s linear;
+}
+.modal__btn--close:hover {
+  color: red;
+}
+
+header .nav {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+}
+header .nav__logo {
+  width: fit-content;
+  padding-top: 5px;
+}
+header .nav__logo--img {
+  width: 50px;
+}
+
+.buildings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buildings__building {
+  width: 434px;
+  height: 220px;
+  background-color: #fbfbfb;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 15px auto;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.buildings__building span {
+  font-weight: 600;
+  position: relative;
+  top: 40%;
+  cursor: default;
+  font-size: 30px;
+}
+.buildings__building:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.floors {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  bottom: -890px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+  display: none;
+  animation: openModal 0.2s ease forwards;
+  z-index: 200;
+}
+.floors--box {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.floors__floor {
+  background-color: #fbfbfb;
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.2s linear;
+  overflow: hidden;
+  padding: 17px 34px 8px;
+  margin: 0 auto 30px;
+}
+.floors__floor--box {
+  display: flex;
+  margin-bottom: 10px;
+}
+.floors__floor .miniroom {
+  background-color: #42a5f5;
+  width: 170px;
+  height: 115px;
+  z-index: 50;
+  border-radius: 15px;
+  transition: all 0.2s linear;
+  margin: 0 17px;
+}
+.floors__floor .miniroom--title {
+  position: relative;
+  top: 45px;
+}
+.floors__floor .miniroom:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.floors__floor .miniroom:first-child {
+  margin-left: 0;
+}
+.floors__floor .miniroom:last-child {
+  margin-right: 0;
+}
+.floors__floor:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.floors__floor:first-child {
+  margin-top: 0px;
+}
+.floors span {
+  font-size: 20px;
+  box-shadow: none !important;
+  margin-bottom: -5px;
+}
+
+@keyframes openModal {
+  to {
+    bottom: 0;
+  }
+}
+.rooms {
+  animation: openModal 0.2s ease forwards;
+}
+.rooms__room {
+  position: absolute;
+  overflow: hidden;
+  text-align: justify;
+  top: 0;
+  z-index: 250;
+  display: none;
+}
+
+.computer--svg {
+  position: absolute;
+  top: -300px;
+  right: -300px;
+}
+
+#monitor,
+#pc-computer,
+#table,
+#keyboard,
+#mouse-pad,
+#mouse,
+#Book,
+#note,
+#tree {
+  transform: translateY(-150px);
+  opacity: 0;
+}
+
+#table {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) forwards;
+}
+
+#monitor {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
+}
+
+#pc-computer {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
+}
+
+#keyboard {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
+}
+
+#mouse-pad {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
+}
+
+#mouse {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
+}
+
+#Book {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
+}
+
+#note {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s forwards;
+}
+
+#tree {
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s forwards;
+}
+
+@keyframes table_computer_intro {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

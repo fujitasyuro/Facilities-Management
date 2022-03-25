@@ -1,0 +1,12 @@
+.rooms {
+  animation: openModal 0.2s ease forwards;
+
+  &__room {
+    position: absolute;
+    overflow: hidden;
+    text-align: justify;
+    top: 0;
+    z-index: 250;
+    display: none;
+  }
+}
