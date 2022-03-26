@@ -57,7 +57,12 @@ main {
 }
 
 .active {
-  display: block;
+  display: block !important;
+}
+
+.disablecontent {
+  animation: closeContent 0.2s ease forwards;
+  display: none;
 }
 
 .disable {
@@ -65,7 +70,7 @@ main {
 }
 
 .room--computer {
-  background-color: #06d6a0 !important;
+  background-color: white !important;
 }
 
 .room--nomal {
@@ -104,13 +109,21 @@ header .nav {
   width: 100%;
   z-index: 100;
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 header .nav__logo {
   width: fit-content;
-  padding-top: 5px;
 }
 header .nav__logo--img {
   width: 50px;
+}
+header .nav__menu {
+  display: flex;
+  list-style: none;
+}
+header .nav__menu li + li {
+  margin-left: 15px;
 }
 
 .buildings {
@@ -215,11 +228,6 @@ header .nav__logo--img {
   margin-bottom: -5px;
 }
 
-@keyframes openModal {
-  to {
-    bottom: 0;
-  }
-}
 .rooms {
   animation: openModal 0.2s ease forwards;
 }
@@ -230,6 +238,17 @@ header .nav__logo--img {
   top: 0;
   z-index: 250;
   display: none;
+}
+.rooms__room__content {
+  font-size: 20px;
+  line-height: 35px;
+  padding-top: 100px;
+  padding-left: 50px;
+  opacity: 0;
+  animation: contentAnimation 0.5s ease forwards;
+}
+.rooms__room__content .title {
+  font-weight: 600;
 }
 
 .computer--svg {
@@ -291,6 +310,22 @@ header .nav__logo--img {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes closeContent {
+  to {
+    bottom: -890px;
+  }
+}
+@keyframes contentAnimation {
+  to {
+    padding-top: 50px;
+    opacity: 1;
+  }
+}
+@keyframes openModal {
+  to {
+    bottom: 0;
   }
 }
 

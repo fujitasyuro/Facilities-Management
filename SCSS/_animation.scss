@@ -1,0 +1,18 @@
+@keyframes closeContent {
+  to {
+    bottom: -890px;
+  }
+}
+
+@keyframes contentAnimation {
+  to {
+    padding-top: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes openModal {
+  to {
+    bottom: 0;
+  }
+}

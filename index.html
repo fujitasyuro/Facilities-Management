@@ -14,6 +14,11 @@
          <div class="nav__logo">
             <img src="./IMG/logo-ctu.png" alt="CTU Logo" class="nav__logo--img">
          </div>
+
+         <ul class="nav__menu">
+            <li>Phòng học</li>
+            <li>Thiết bị</li>
+         </ul>
       </div>
    </header>
 
@@ -428,10 +433,81 @@
 
 
       <!-- PHÒNG -->
-      <div class="rooms">
+      <div class="rooms" id="rooms">
          <div class="rooms__room room--computer" id="roomModal1">
             <button class="modal__btn--close room--close">
                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="rooms__room__content">
+               <div class="tongsomay">
+                  <span class="title">Tổng số máy:</span>
+                  <span>50</span>
+               </div>
+
+               <div class="somayhoatdong">
+                  <span class="title">Số máy hoạt động:</span>
+                  <span>48</span>
+               </div>
+
+               <div class="somaykhonghoatdong">
+                  <span class="title">Số máy không hoạt động:</span>
+                  <span>2</span>
+                  <ul>
+                     <li>
+                        <span class="title">
+                           Máy không hoạt động:
+                        </span>
+                        <span>
+                           Máy 12
+                        </span>
+
+                        <ul>
+                           <li>
+                              <span class="title">
+                                 Mô tả vấn đề:
+                              </span>
+                              <span>
+                                 không lên màn hình
+                              </span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <span class="title">
+                           Máy không hoạt động:
+                        </span>
+                        <span>
+                           Máy 35
+                        </span>
+
+                        <ul>
+                           <li>
+                              <span class="title">
+                                 Mô tả vấn đề:
+                              </span>
+                              <span>
+                                 không dùng được chuột, bàn phím
+                              </span>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="soluongban">
+                  <span class="title">Số lượng bàn:</span>
+                  <span>50</span>
+               </div>
+
+               <div class="soluongghe">
+                  <span class="title">Số lượng ghế:</span>
+                  <span>80</span>
+               </div>
+            </div>
+
+            <button>
+               <i class="fa-solid fa-circle-exclamation"></i>
             </button>
 
             <div class="computer--svg">

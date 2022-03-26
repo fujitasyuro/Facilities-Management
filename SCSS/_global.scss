@@ -54,7 +54,12 @@ main {
 }
 
 .active {
-  display: block;
+  display: block !important;
+}
+
+.disablecontent {
+  animation: closeContent 0.2s ease forwards;
+  display: none;
 }
 
 .disable {
@@ -62,7 +67,8 @@ main {
 }
 
 .room--computer {
-  background-color: #06d6a0 !important;
+  // background-color: #06d6a0 !important;
+  background-color: white !important;
 }
 
 .room--nomal {

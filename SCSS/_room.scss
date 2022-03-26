@@ -8,5 +8,18 @@
     top: 0;
     z-index: 250;
     display: none;
+
+    &__content {
+      font-size: 20px;
+      line-height: 35px;
+      padding-top: 100px;
+      padding-left: 50px;
+      opacity: 0;
+      animation: contentAnimation 0.5s ease forwards;
+
+      & .title {
+        font-weight: 600;
+      }
+    }
   }
 }
