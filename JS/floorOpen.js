@@ -4,7 +4,8 @@ buildingBtns.forEach(function(btn) {
    btn.onclick = function() {
       var floor = btn.getAttribute("data-modal");
 
-      document.getElementById(floor).style.display = "block";
+      document.getElementById(floor).classList.add("active");
+      // document.getElementById(floor).style.display = "block";
    };
 });
 
@@ -12,7 +13,6 @@ var buildingClose = document.querySelectorAll(".floor--close");
 
 buildingClose.forEach(function(btn) {
    btn.onclick = function() {
-      var floor = (btn.closest(".floors").style.display = "none");
-      console.log("click");
+      var floor = (btn.closest(".floors").classList.remove("active"));
    };
 });

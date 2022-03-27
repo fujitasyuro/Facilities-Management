@@ -54,16 +54,7 @@ main {
 }
 
 .active {
-  display: block !important;
-}
-
-.disablecontent {
-  animation: closeContent 0.2s ease forwards;
-  display: none;
-}
-
-.disable {
-  display: none !important;
+  bottom: 0px !important;
 }
 
 .room--computer {

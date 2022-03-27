@@ -3,7 +3,7 @@
   width: 100%;
   position: absolute;
   height: 100%;
-  bottom: -890px;
+  bottom: -1000px;
   // top: 50%;
   left: 50%;
   transform: translateX(-50%);
@@ -12,9 +12,10 @@
   background-color: white;
   // border-radius: 25px 25px 0 0;
   box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
-  display: none;
-  animation: openModal 0.2s ease forwards;
+  // animation: openModal 0.2s ease forwards;
+  display: block;
   z-index: 200;
+  transition: all 0.25s ease-out;
 
   &--box {
     position: relative;

@@ -1,9 +1,3 @@
-@keyframes closeContent {
-  to {
-    bottom: -890px;
-  }
-}
-
 @keyframes contentAnimation {
   to {
     padding-top: 50px;
@@ -12,7 +6,19 @@
 }
 
 @keyframes openModal {
+  from {
+    bottom: -890px;
+  }
   to {
     bottom: 0;
+  }
+}
+
+@keyframes closeContent {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -890px;
   }
 }

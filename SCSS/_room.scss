@@ -1,25 +1,25 @@
-.rooms {
-  animation: openModal 0.2s ease forwards;
+.room {
+  position: absolute;
+  overflow: hidden;
+  text-align: justify;
+  z-index: 250;
+  display: block;
+  bottom: -1000px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-out;
 
-  &__room {
-    position: absolute;
-    overflow: hidden;
-    text-align: justify;
-    top: 0;
-    z-index: 250;
-    display: none;
+  &__content {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 35px;
+    opacity: 0;
+    animation: contentAnimation 0.5s ease forwards;
+    padding: 100px;
 
-    &__content {
-      font-size: 20px;
-      line-height: 35px;
-      padding-top: 100px;
-      padding-left: 50px;
-      opacity: 0;
-      animation: contentAnimation 0.5s ease forwards;
-
-      & .title {
-        font-weight: 600;
-      }
+    & .title {
+      font-weight: 600;
     }
   }
 }

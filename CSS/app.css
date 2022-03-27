@@ -57,16 +57,7 @@ main {
 }
 
 .active {
-  display: block !important;
-}
-
-.disablecontent {
-  animation: closeContent 0.2s ease forwards;
-  display: none;
-}
-
-.disable {
-  display: none !important;
+  bottom: 0px !important;
 }
 
 .room--computer {
@@ -75,15 +66,6 @@ main {
 
 .room--nomal {
   background-color: #fbfbfb !important;
-}
-
-.rooms {
-  width: 100%;
-  height: 100%;
-}
-.rooms__room {
-  width: 100%;
-  height: 100%;
 }
 
 .modal__btn--close {
@@ -164,15 +146,15 @@ header .nav__menu li + li {
   width: 100%;
   position: absolute;
   height: 100%;
-  bottom: -890px;
+  bottom: -1000px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
-  display: none;
-  animation: openModal 0.2s ease forwards;
+  display: block;
   z-index: 200;
+  transition: all 0.25s ease-out;
 }
 .floors--box {
   position: relative;
@@ -228,27 +210,36 @@ header .nav__menu li + li {
   margin-bottom: -5px;
 }
 
-.rooms {
-  animation: openModal 0.2s ease forwards;
-}
-.rooms__room {
+.room {
   position: absolute;
   overflow: hidden;
   text-align: justify;
-  top: 0;
   z-index: 250;
-  display: none;
+  display: block;
+  bottom: -1000px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-out;
 }
-.rooms__room__content {
+.room__content {
+  width: 100%;
+  height: 100%;
   font-size: 20px;
   line-height: 35px;
-  padding-top: 100px;
-  padding-left: 50px;
   opacity: 0;
   animation: contentAnimation 0.5s ease forwards;
+  padding: 100px;
 }
-.rooms__room__content .title {
+.room__content .title {
   font-weight: 600;
+}
+
+.computer {
+  background-color: white;
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .computer--svg {
@@ -271,50 +262,54 @@ header .nav__menu li + li {
 }
 
 #table {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1)
+    forwards;
 }
 
 #monitor {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s
+    forwards;
 }
 
 #pc-computer {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s
+    forwards;
 }
 
 #keyboard {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s
+    forwards;
 }
 
 #mouse-pad {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s
+    forwards;
 }
 
 #mouse {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s
+    forwards;
 }
 
 #Book {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s
+    forwards;
 }
 
 #note {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s
+    forwards;
 }
 
 #tree {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s
+    forwards;
 }
 
 @keyframes table_computer_intro {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-@keyframes closeContent {
-  to {
-    bottom: -890px;
   }
 }
 @keyframes contentAnimation {
@@ -324,8 +319,19 @@ header .nav__menu li + li {
   }
 }
 @keyframes openModal {
+  from {
+    bottom: -890px;
+  }
   to {
     bottom: 0;
+  }
+}
+@keyframes closeContent {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -890px;
   }
 }
 
