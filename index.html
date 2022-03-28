@@ -41,6 +41,9 @@
 
       <!-- TẦNG -->
       <div class="floors" id="buildingModal1">
+         <h1 class="title--large">
+            HA 1-2
+         </h1>
          <button class="modal__btn--close floor--close">
             <i class="fa-solid fa-xmark"></i>
          </button>
@@ -57,12 +60,12 @@
                         303
                      </span>
                   </div>
-                  <div class="miniroom room--computer" data-modal="roomModal1">
+                  <div class="miniroom room--computer" data-modal="ha1-2-302">
                      <span class="miniroom--title">
                         302
                      </span>
                   </div>
-                  <div class="miniroom room--computer">
+                  <div class="miniroom room--computer" data-modal="ha1-2-301">
                      <span class="miniroom--title">
                         301
                      </span>
@@ -138,6 +141,10 @@
       </div>
 
       <div class="floors" id="buildingModal2">
+         <h1 class="title--large">
+            HA 1-2
+         </h1>
+
          <button class="modal__btn--close floor--close">
             <i class="fa-solid fa-xmark"></i>
          </button>
@@ -236,6 +243,10 @@
       </div>
 
       <div class="floors" id="buildingModal3">
+         <h1 class="title--large">
+            HA 1-2
+         </h1>
+
          <button class="modal__btn--close floor--close">
             <i class="fa-solid fa-xmark"></i>
          </button>
@@ -334,6 +345,10 @@
       </div>
 
       <div class="floors" id="buildingModal4">
+         <h1 class="title--large">
+            HA 1-2
+         </h1>
+
          <button class="modal__btn--close floor--close">
             <i class="fa-solid fa-xmark"></i>
          </button>
@@ -433,7 +448,7 @@
 
 
       <!-- PHÒNG -->
-      <div class="room room--computer" id="roomModal1">
+      <div class="room room--computer" id="ha1-2-302">
          <button class="modal__btn--close room--close">
             <i class="fa-solid fa-xmark"></i>
          </button>
@@ -442,6 +457,7 @@
             <div class="room__content--main">
                <div class="computer">
                   <div class="computer--box">
+                     <h1 class="title--large">MÁY TÍNH</h1>
                      <div class="detail">
                         <div class="detail__amount">
                            <span class="detail--title">
@@ -1026,6 +1042,7 @@
 
                <div class="table">
                   <div class="table--box">
+                     <h1 class="title--large">BÀN GHẾ</h1>
                      <div class="detail__amount">
                         <span class="detail--title">
                            Số lượng máy:
@@ -1040,7 +1057,41 @@
          </div>
 
          <div class="room__content--complement">
+            <div class="fans room__content--complement--box status--damage">
+               <h1 class="title--medium">QUẠT</h1>
+               
+               <div class="amount">
+                  <span class="detail--complement" style="font-weight: 600; font-size: 40px;">3</span>
+                  <span class="detail--complement">/6</span>
+               </div>
+               <span class="status--text">
+                  Hư hại nhiều
+               </span>
+            </div>
 
+            <div class="lamps room__content--complement--box status--notgood">
+               <h1 class="title--medium">ĐÈN</h1>
+
+               <div class="amount">
+                  <span class="detail--complement" style="font-weight: 600; font-size: 40px;">7</span>
+                  <span class="detail--complement">/8</span>
+               </div>
+               <span class="status--text">
+                  Có hư hại
+               </span>
+            </div>
+
+            <div class="air-conditioner room__content--complement--box status--good">
+               <h1 class="title--medium">MÁY LẠNH</h1>
+
+               <div class="amount">
+                  <span class="detail--complement" style="font-weight: 600; font-size: 40px;">1</span>
+                  <span class="detail--complement">/1</span>
+               </div>
+               <span class="status--text">
+                  Có hư hại
+               </span>
+            </div>
          </div>
       </div>
    </main>

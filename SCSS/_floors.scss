@@ -17,6 +17,14 @@
   z-index: 200;
   transition: all 0.25s ease-out;
 
+  .title--large {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11px;
+  }
+
   &--box {
     position: relative;
     transform: translateY(-50%);

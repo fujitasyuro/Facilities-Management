@@ -85,3 +85,29 @@ main {
     }
   }
 }
+
+.title--medium {
+  font-size: 35px;
+}
+
+.title--large {
+  font-size: 50px;
+}
+
+.status {
+  &--good {
+    background-color: #00f5d4 !important;
+  }
+
+  &--notgood {
+    background-color: #ffb703 !important;
+  }
+
+  &--damage {
+    background-color: #e63946 !important;
+  }
+
+  &--text {
+    font-size: 20px;
+  }
+}
