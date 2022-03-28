@@ -60,12 +60,13 @@ main {
   bottom: 0px !important;
 }
 
-.room--computer {
-  background-color: white !important;
+.rooms {
+  width: 100%;
+  height: 100%;
 }
-
-.room--nomal {
-  background-color: #fbfbfb !important;
+.rooms__room {
+  width: 100%;
+  height: 100%;
 }
 
 .modal__btn--close {
@@ -212,10 +213,11 @@ header .nav__menu li + li {
 
 .room {
   position: absolute;
+  display: block;
+  background-color: white;
   overflow: hidden;
   text-align: justify;
   z-index: 250;
-  display: block;
   bottom: -1000px;
   width: 100%;
   height: 100%;
@@ -233,19 +235,44 @@ header .nav__menu li + li {
 .room__content .title {
   font-weight: 600;
 }
+.room__content--main {
+  display: flex;
+}
+.room__content--complement {
+  display: flex;
+}
+.room .table {
+  flex: 1;
+}
+.room .table--box {
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 70px auto 0;
+}
 
 .computer {
+  flex: 1;
+}
+.computer--box {
   background-color: white;
   border-radius: 15px;
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 400px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  margin: 70px auto 0;
+  padding: 15px 30px;
 }
 
 .computer--svg {
   position: absolute;
   top: -300px;
   right: -300px;
+  cursor: default;
 }
 
 #monitor,
@@ -262,48 +289,39 @@ header .nav__menu li + li {
 }
 
 #table {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1)
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) forwards;
 }
 
 #monitor {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
 }
 
 #pc-computer {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
 }
 
 #keyboard {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
 }
 
 #mouse-pad {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.2s forwards;
 }
 
 #mouse {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
 }
 
 #Book {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.3s forwards;
 }
 
 #note {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s forwards;
 }
 
 #tree {
-  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s
-    forwards;
+  animation: table_computer_intro 0.8s cubic-bezier(0.04, 0.55, 0.58, 1) 0.4s forwards;
 }
 
 @keyframes table_computer_intro {

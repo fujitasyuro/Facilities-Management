@@ -1,15 +1,23 @@
 .computer {
-  background-color: white;
-  border-radius: 15px;
-  width: 500px;
-  height: 300px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex: 1;
+
+  &--box {
+    background-color: white;
+    border-radius: 15px;
+    width: 700px;
+    height: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    margin: 70px auto 0;
+    padding: 15px 30px;
+  }
 }
 
 .computer--svg {
   position: absolute;
   top: -300px;
   right: -300px;
+  cursor: default;
 }
 
 #monitor,
