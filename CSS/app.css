@@ -89,6 +89,8 @@ main {
 
 .title--large {
   font-size: 50px;
+  position: relative;
+  z-index: 200;
 }
 
 .status--good {
@@ -301,9 +303,20 @@ header .nav__menu li + li {
   border-radius: 15px;
   padding: 30px;
   margin: 70px auto 0;
+  position: relative;
 }
 .room .table--box .title--large {
   margin: 10px 0 30px;
+}
+.room .table--box .detail {
+  position: relative;
+  z-index: 200;
+}
+.room .table--svg {
+  position: absolute;
+  top: -620px;
+  right: -81px;
+  left: 215px;
 }
 .room .detail {
   position: relative;
@@ -339,6 +352,7 @@ header .nav__menu li + li {
   position: absolute;
   top: -300px;
   right: -317px;
+  left: 15px;
   cursor: default;
 }
 

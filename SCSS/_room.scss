@@ -67,10 +67,23 @@
       border-radius: 15px;
       padding: 30px;
       margin: 70px auto 0;
+      position: relative;
 
       & .title--large {
         margin: 10px 0 30px;
       }
+
+      & .detail {
+        position: relative;
+        z-index: 200;
+      }
+    }
+
+    &--svg {
+      position: absolute;
+      top: -620px;
+      right: -81px;
+      left: 215px;
     }
   }
 
