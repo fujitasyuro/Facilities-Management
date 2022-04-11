@@ -82,6 +82,19 @@ main {
 .modal__btn--close:hover {
   color: red;
 }
+.modal__btn--seemore {
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  cursor: pointer;
+  z-index: 90;
+  background: none;
+  transition: all 0.15s linear;
+}
+.modal__btn--seemore:hover {
+  color: #0077ff;
+}
 
 .title--medium {
   font-size: 35px;
@@ -91,6 +104,7 @@ main {
   font-size: 50px;
   position: relative;
   z-index: 200;
+  text-shadow: 0px 2px 4px rgba(131, 131, 131, 0.65);
 }
 
 .status--good {
@@ -284,6 +298,7 @@ header .nav__menu li + li {
   box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 12px;
   margin: 0 auto;
   padding: 30px;
+  position: relative;
 }
 .room__content--complement--box .title--medium {
   font-weight: 600;
@@ -411,6 +426,43 @@ header .nav__menu li + li {
     opacity: 1;
   }
 }
+.seemore {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1000px;
+  z-index: 260;
+  transition: all 0.25s ease-out;
+}
+.seemore__content {
+  border-spacing: 0 10px;
+  margin: 85px auto 15px;
+}
+.seemore__content thead tr th:first-child {
+  width: 100px;
+}
+.seemore__content thead tr th:nth-child(2) {
+  width: 215px;
+}
+.seemore__content thead tr th:nth-child(3) {
+  width: 600px;
+}
+.seemore__content thead tr th:nth-child(4) {
+  width: 220px;
+}
+.seemore__content thead tr th:nth-child(5) {
+  width: 250px;
+}
+.seemore__content tbody tr td {
+  text-align: center;
+}
+.seemore__content tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 @keyframes contentAnimation {
   to {
     padding-top: 50px;

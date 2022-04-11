@@ -5,6 +5,7 @@ buildingBtns.forEach(function(btn) {
       var floor = btn.getAttribute("data-modal");
       document.getElementById(floor).classList.add("active");
       document.getElementById("computer--svg").style.display = "block";
+      document.getElementById("table--svg").style.display = "block";
    };
 });
 
@@ -14,6 +15,7 @@ buildingClose.forEach(function(btn) {
    btn.onclick = function() {
       var room = (btn.closest(".room").classList.remove("active"));
       document.getElementById("computer--svg").style.display = "none";
+      document.getElementById("table--svg").style.display = "none";
       
    };
 });
