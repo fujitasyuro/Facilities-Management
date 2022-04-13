@@ -56,14 +56,15 @@
       width: 170px;
       height: 115px;
       z-index: 50;
-      // margin: 0 auto;
       border-radius: 15px;
       transition: all 0.2s linear;
       margin: 0 17px;
+      position: relative;
 
       &--title {
-        position: relative;
-        top: 45px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
 
       &:hover {

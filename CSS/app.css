@@ -287,10 +287,12 @@ header .nav__menu li + li {
   border-radius: 15px;
   transition: all 0.2s linear;
   margin: 0 17px;
+  position: relative;
 }
 .floors__floor .miniroom--title {
-  position: relative;
-  top: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .floors__floor .miniroom:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -326,6 +328,13 @@ header .nav__menu li + li {
   width: 100%;
   height: 100%;
   transition: all 0.25s ease-out;
+}
+.room__miniinfo {
+  margin-top: 7px;
+  cursor: default;
+}
+.room__miniinfo svg + svg {
+  margin-left: 5px;
 }
 .room__content {
   width: 100%;
