@@ -460,6 +460,15 @@
                      <bottom class="modal__btn--seemore" data-modal="ha1-2-302-computer">
                         <i class="fa-regular fa-eye"></i>
                      </bottom>
+
+                     <bottom class="modal__btn--add" data-modal="ha1-2-302-computer-add">
+                        <i class="fa-solid fa-plus"></i>
+                     </bottom>
+
+                     <bottom class="modal__btn--report" data-modal="ha1-2-302-computer-report">
+                        <i class="fa-solid fa-exclamation"></i>
+                     </bottom>
+
                      <h1 class="title--large">MÁY TÍNH</h1>
                      <div class="detail">
                         <div class="detail__amount">
@@ -1046,8 +1055,16 @@
 
                <div class="table">
                   <div class="table--box">
-                     <bottom class="modal__btn--seemore">
+                     <bottom class="modal__btn--seemore" data-modal="ha1-2-302-table">
                         <i class="fa-regular fa-eye"></i>
+                     </bottom>
+
+                     <bottom class="modal__btn--add" data-modal="ha1-2-302-table-add">
+                        <i class="fa-solid fa-plus"></i>
+                     </bottom>
+
+                     <bottom class="modal__btn--report" data-modal="ha1-2-302-table-report">
+                        <i class="fa-solid fa-exclamation"></i>
                      </bottom>
 
                      <h1 class="title--large">BÀN GHẾ</h1>
@@ -1387,10 +1404,18 @@
                <div class="amount">
                   <span class="detail--complement" style="font-weight: 600; font-size: 40px;">3</span>
                   <span class="detail--complement">/6</span>
+                  <span class="status--text">
+                     Hư hại nhiều
+                  </span>
                </div>
-               <span class="status--text">
-                  Hư hại nhiều
-               </span>
+
+               <bottom class="modal__btn--add" data-modal="ha1-2-302-fans-add">
+                  <i class="fa-solid fa-plus"></i>
+               </bottom>
+
+               <bottom class="modal__btn--report" data-modal="ha1-2-302-fans-report">
+                  <i class="fa-solid fa-exclamation"></i>
+               </bottom>
             </div>
 
             <div class="lamps room__content--complement--box status--notgood">
@@ -1403,10 +1428,18 @@
                <div class="amount">
                   <span class="detail--complement" style="font-weight: 600; font-size: 40px;">7</span>
                   <span class="detail--complement">/8</span>
+                  <span class="status--text">
+                     Có hư hại
+                  </span>
                </div>
-               <span class="status--text">
-                  Có hư hại
-               </span>
+               
+               <bottom class="modal__btn--add" data-modal="ha1-2-302-lamps-add">
+                  <i class="fa-solid fa-plus"></i>
+               </bottom>
+
+               <bottom class="modal__btn--report" data-modal="ha1-2-302-lamps-report">
+                  <i class="fa-solid fa-exclamation"></i>
+               </bottom>
             </div>
 
             <div class="air-conditioner room__content--complement--box status--good">
@@ -1414,15 +1447,23 @@
                   <i class="fa-regular fa-eye"></i>
                </bottom>
 
+               <bottom class="modal__btn--report" data-modal="ha1-2-302-air-conditioner-report">
+                  <i class="fa-solid fa-exclamation"></i>
+               </bottom>
+
                <h1 class="title--medium">MÁY LẠNH</h1>
 
                <div class="amount">
                   <span class="detail--complement" style="font-weight: 600; font-size: 40px;">1</span>
                   <span class="detail--complement">/1</span>
+                  <span class="status--text">
+                     Tốt
+                  </span>
                </div>
-               <span class="status--text">
-                  Có hư hại
-               </span>
+
+               <bottom class="modal__btn--add" data-modal="ha1-2-302-air-conditioner-add">
+                  <i class="fa-solid fa-plus"></i>
+               </bottom>    
             </div>
          </div>
       </div>
@@ -2491,6 +2532,93 @@
                   </td>
                   <td>
                      Hoạt động bình thường
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+
+      <div class="seemore" id="ha1-2-302-table">
+         <button class="modal__btn--close seemore--close">
+            <i class="fa-solid fa-xmark"></i>
+         </button>
+
+         <table class="seemore__content">
+            <thead>
+               <th>
+                  Hàng
+                  <i class="fa-solid fa-arrow-down-long"></i>
+               </th>
+               <th>
+                  Bàn số
+                  <i class="fa-solid fa-arrow-right-long"></i>
+               </th>
+               <th>
+                  Loại bàn
+               </th>
+               <th>
+                  Loại ghế
+               </th>
+               <th>
+                  Tình trạng
+               </th>
+               <th>
+                  Thao tác
+               </th>
+            </thead>
+
+            <tbody>
+               <tr>
+                  <td>
+                     1
+                  </td>
+                  <td>
+                     Bàn 1
+                  </td>
+                  <td>
+                     Bàn máy tính
+                  </td>
+                  <td>
+                     Ghế học sinh
+                  </td>
+                  <td>
+                     Tốt
+                  </td>
+                  <td>
+                     <button class="modal__btn--delete">
+                        <i class="fa-regular fa-trash-can"></i>
+                     </button>
+
+                     <button class="modal__btn--edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                     </button>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td>
+                     1
+                  </td>
+                  <td>
+                     Bàn 2
+                  </td>
+                  <td>
+                     Bàn máy tính
+                  </td>
+                  <td>
+                     Ghế học sinh
+                  </td>
+                  <td>
+                     Tốt
+                  </td>
+                  <td>
+                     <button class="modal__btn--delete">
+                        <i class="fa-regular fa-trash-can"></i>
+                     </button>
+
+                     <button class="modal__btn--edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                     </button>
                   </td>
                </tr>
             </tbody>

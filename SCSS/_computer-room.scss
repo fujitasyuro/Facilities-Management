@@ -10,10 +10,16 @@
     position: relative;
     margin: 70px auto 0;
     padding: 30px;
+    transition: all 0.2s linear;
 
     & .title--large {
       font-size: 50px;
       margin: 10px 0 30px;
+    }
+
+    &:hover {
+      transform: scale(1.015);
+      box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 25px;
     }
   }
 }
@@ -24,6 +30,7 @@
   right: -317px;
   left: 15px;
   cursor: default;
+  pointer-events: none;
 }
 
 #monitor,

@@ -44,10 +44,16 @@
         margin: 0 auto;
         padding: 30px;
         position: relative;
+        transition: all 0.2s linear;
 
         & .title--medium {
           font-weight: 600;
           margin: -25px -10px 10px;
+        }
+
+        &:hover {
+          transform: scale(1.015);
+          box-shadow: rgba(0, 0, 0, 0.199) 0px 4px 18px;
         }
       }
 
@@ -69,6 +75,7 @@
       padding: 30px;
       margin: 70px auto 0;
       position: relative;
+      transition: all 0.2s linear;
 
       & .title--large {
         margin: 10px 0 30px;
@@ -78,13 +85,20 @@
         position: relative;
         z-index: 200;
       }
+
+      &:hover {
+        transform: scale(1.015);
+        box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 25px;
+      }
     }
 
     &--svg {
       position: absolute;
       top: -620px;
-      right: -81px;
-      left: 215px;
+      right: -65px;
+      left: 253px;
+      pointer-events: none;
+      
     }
   }
 

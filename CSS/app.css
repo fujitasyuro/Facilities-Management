@@ -81,6 +81,7 @@ main {
 }
 .modal__btn--close:hover {
   color: red;
+  transform: scale(1.5);
 }
 .modal__btn--seemore {
   font-size: 18px;
@@ -91,9 +92,64 @@ main {
   z-index: 90;
   background: none;
   transition: all 0.15s linear;
+  color: black;
 }
 .modal__btn--seemore:hover {
+  transform: scale(1.3);
+}
+.modal__btn--add {
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+  cursor: pointer;
+  z-index: 90;
+  background: none;
+  transition: all 0.15s linear;
+  color: black;
+}
+.modal__btn--add:hover {
   color: #0077ff;
+  transform: scale(1.5);
+}
+.modal__btn--report {
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+  cursor: pointer;
+  z-index: 90;
+  background: none;
+  transition: all 0.15s linear;
+  color: black;
+}
+.modal__btn--report:hover {
+  color: #ff9f1c;
+  transform: scale(1.5);
+}
+.modal__btn--delete {
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 90;
+  background: none;
+  transition: all 0.15s linear;
+  color: black;
+}
+.modal__btn--delete:hover {
+  color: red;
+  transform: scale(1.2);
+}
+.modal__btn--edit {
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 90;
+  background: none;
+  transition: all 0.15s linear;
+  color: black;
+}
+.modal__btn--edit:hover {
+  color: #ffbe0b;
+  transform: scale(1.2);
 }
 
 .title--medium {
@@ -118,6 +174,7 @@ main {
 }
 .status--text {
   font-size: 20px;
+  margin-left: 15px;
 }
 
 header .nav {
@@ -177,6 +234,7 @@ header .nav__menu li + li {
 }
 .buildings__building:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.015);
 }
 
 .floors {
@@ -236,6 +294,7 @@ header .nav__menu li + li {
 }
 .floors__floor .miniroom:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.02);
 }
 .floors__floor .miniroom:first-child {
   margin-left: 0;
@@ -245,6 +304,7 @@ header .nav__menu li + li {
 }
 .floors__floor:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.015);
 }
 .floors__floor:first-child {
   margin-top: 0px;
@@ -299,10 +359,15 @@ header .nav__menu li + li {
   margin: 0 auto;
   padding: 30px;
   position: relative;
+  transition: all 0.2s linear;
 }
 .room__content--complement--box .title--medium {
   font-weight: 600;
   margin: -25px -10px 10px;
+}
+.room__content--complement--box:hover {
+  transform: scale(1.015);
+  box-shadow: rgba(0, 0, 0, 0.199) 0px 4px 18px;
 }
 .room__content--complement .amount {
   margin: -5px 0 3px;
@@ -319,6 +384,7 @@ header .nav__menu li + li {
   padding: 30px;
   margin: 70px auto 0;
   position: relative;
+  transition: all 0.2s linear;
 }
 .room .table--box .title--large {
   margin: 10px 0 30px;
@@ -327,11 +393,16 @@ header .nav__menu li + li {
   position: relative;
   z-index: 200;
 }
+.room .table--box:hover {
+  transform: scale(1.015);
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 25px;
+}
 .room .table--svg {
   position: absolute;
   top: -620px;
-  right: -81px;
-  left: 215px;
+  right: -65px;
+  left: 253px;
+  pointer-events: none;
 }
 .room .detail {
   position: relative;
@@ -357,10 +428,15 @@ header .nav__menu li + li {
   position: relative;
   margin: 70px auto 0;
   padding: 30px;
+  transition: all 0.2s linear;
 }
 .computer--box .title--large {
   font-size: 50px;
   margin: 10px 0 30px;
+}
+.computer--box:hover {
+  transform: scale(1.015);
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 25px;
 }
 
 .computer--svg {
@@ -369,6 +445,7 @@ header .nav__menu li + li {
   right: -317px;
   left: 15px;
   cursor: default;
+  pointer-events: none;
 }
 
 #monitor,
