@@ -397,12 +397,41 @@ header .nav__menu li + li {
   transform: scale(1.015);
   box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 25px;
 }
+.room .table--box .modal__btn--add:hover .table__add__option {
+  transform: scale(1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .room .table--svg {
   position: absolute;
   top: -620px;
   right: -65px;
   left: 253px;
   pointer-events: none;
+}
+.room .table__add__option {
+  position: absolute;
+  left: -70px;
+  bottom: -64px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transform: scale(0);
+  text-align: center;
+  line-height: 25px;
+  width: 155px;
+  font-size: 13px;
+}
+.room .table__add__option ul {
+  list-style: none;
+  padding: 0;
+}
+.room .table__add__option ul li a {
+  text-decoration: none;
+  color: #0077ff;
+  transition: all 0.2s linear;
+}
+.room .table__add__option ul li a:hover {
+  font-size: 14px;
 }
 .room .detail {
   position: relative;
@@ -437,6 +466,10 @@ header .nav__menu li + li {
 .computer--box:hover {
   transform: scale(1.015);
   box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 25px;
+}
+.computer--box .modal__btn--add:hover .computer__add__option {
+  transform: scale(1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .computer--svg {
@@ -503,6 +536,32 @@ header .nav__menu li + li {
     opacity: 1;
   }
 }
+.computer__add__option {
+  position: absolute;
+  left: -70px;
+  bottom: -64px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transform: scale(0);
+  text-align: center;
+  line-height: 25px;
+  width: 155px;
+  font-size: 13px;
+}
+.computer__add__option ul {
+  list-style: none;
+  padding: 0;
+}
+.computer__add__option ul li a {
+  text-decoration: none;
+  color: #0077ff;
+  transition: all 0.2s linear;
+}
+.computer__add__option ul li a:hover {
+  font-size: 14px;
+}
+
 .seemore {
   height: 100%;
   width: 100%;
