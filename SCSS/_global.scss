@@ -7,7 +7,8 @@
 }
 * {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Helvetica, sans-serif;
+  // font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -120,9 +121,6 @@ main {
 
     &--report {
       font-size: 18px;
-      position: absolute;
-      bottom: 10px;
-      left: 55px;
       cursor: pointer;
       z-index: 90;
       background: none;
@@ -131,7 +129,7 @@ main {
 
       &:hover {
         color: #ff9f1c;
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
 

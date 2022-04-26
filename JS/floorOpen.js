@@ -5,7 +5,7 @@ buildingBtns.forEach(function(btn) {
       var floor = btn.getAttribute("data-modal");
 
       document.getElementById(floor).classList.add("active");
-      // document.getElementById(floor).style.display = "block";
+      // document.getElementById(floor).style.display = "block"; 
    };
 });
 
