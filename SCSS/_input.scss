@@ -27,3 +27,22 @@
     }
   }
 }
+
+.text {
+  &__box {
+    background-color: rgba($main-color, 0.15);
+    transition: all 0.2s linear;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+
+    &:hover {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    &:focus {
+      border: 2px solid $main-color;
+      background-color: #fbfbfb;
+    }
+  }
+}

@@ -22,11 +22,18 @@ header {
 
     &__menu {
       display: flex;
-      list-style: none;
-
-      & li + li {
-        margin-left: 15px;
-      }
+      width: 40%;
+      font-size: 17px;
+      font-weight: 600;
+      text-align: center;
     }
   }
+}
+
+.tab-item {
+  margin-left: 15px;
+  padding: 10px 0;
+  border-bottom: 5px solid transparent;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }

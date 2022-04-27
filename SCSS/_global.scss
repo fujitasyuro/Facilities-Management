@@ -97,3 +97,44 @@ main {
     margin-left: 15px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.active-tab {
+  color: rgba( #000000, 1);
+}
+
+.active-content {
+  display: block !important;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  height: 5px;
+  border-radius: 50rem;
+  transition: all 0.2s ease-in-out;
+  background-color: $main-color;
+}
+
+.classroom, .device {
+  height: 100vh;
+}
